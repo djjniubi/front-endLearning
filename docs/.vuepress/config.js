@@ -1,14 +1,22 @@
-/*
- * @Description:
- * @Author: 邓建军
- * @Date: 2023-08-25 09:49:18
- * @LastEditTime: 2023-08-25 11:30:46
- */
+
 module.exports = {
-  title: "TypeScript4 文档",
+  head:[
+    ['script',{},`
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?0c169f674f8e30fcbcbd6d07eeaf7446";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    `]
+  ],
+  title: "一个菜鸟前端学习笔记",
   description: "TypeScript4 最新官方文档翻译",
   base:"/front-endLearnig/",
   themeConfig: {
+    lastUpdated:"上次更新",
     nav: [
       { text: "首页", link: "/" },
       { text: "博客", items: [{ text: "Github", link: "https://github.com/djjniubi" }] },
