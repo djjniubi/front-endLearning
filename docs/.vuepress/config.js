@@ -17,6 +17,8 @@ module.exports = {
   base:"/front-endLearnig/",
   themeConfig: {
     lastUpdated:"上次更新",
+    smoothScroll:true,
+    subSidebar:"auto",
     nav: [
       { text: "首页", link: "/" },
       { text: "博客", items: [{ text: "Github", link: "https://github.com/djjniubi" }] },
@@ -25,13 +27,19 @@ module.exports = {
       {
         title: "js学习之路",
         path: "/jsBook/PrimaryDataType",
-        collapsable: false,
+        collapsable: true,
         children: [
           { title: "js基本数据类型", path: "/jsBook/PrimaryDataType" },
           { title: "表达式和运算符", path: "/jsBook/ExpressionOperator" },
         ],
       },
     ],
+  },
+  markdown:{
+    anchor:{
+        permalink: true,
+        permalinkBefore:true
+    }
   },
   theme:"reco"
 };

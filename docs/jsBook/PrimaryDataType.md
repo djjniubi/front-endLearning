@@ -1,3 +1,3 @@
-js的基本数据类型
+## js的基本数据类型
 
 <LastUpdated />
